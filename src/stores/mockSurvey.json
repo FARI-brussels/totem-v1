@@ -1,0 +1,133 @@
+{
+  "questions": [
+    {
+      "name": "recommendation",
+      "en": "How likely are you to recommend a demo tour? ",
+      "fr": "Quelle est la probabilité que vous recommandiez une visite de démonstration?",
+      "nl": "Hoe waarschijnlijk is het dat u een demonstratietour aanbeveelt?"
+    }
+  ],
+  "feedback_negative": {
+    "title": {
+      "en": "We’re sorry your experience wasn’t great.How can we improve?",
+      "fr": "Nous sommes désolés que votre expérience n'ait pas été excellente. Comment pouvons-nous nous améliorer?",
+      "nl": "Het spijt ons dat uw ervaring niet geweldig was. Hoe kunnen we het verbeteren?"
+    },
+    "questions": [
+      {
+        "label": {
+          "en": "Demos didn’t work due to technical issues",
+          "fr": "Les démos n'ont pas fonctionné en raison de problèmes techniques",
+          "nl": "Demo's werkten niet vanwege technische problemen"
+        }
+      },
+      {
+        "label": {
+          "en": "Demos were too complex or hard to use",
+          "fr": "Les démos étaient trop complexes ou difficiles à utiliser",
+          "nl": "Demo's waren te complex of moeilijk te gebruiken"
+        }
+      },
+      {
+        "label": {
+          "en": "Demos were boring or unengaging.",
+          "fr": "Les démonstrations étaient ennuyeuses ou peu engageantes",
+          "nl": "Demo's waren saai of niet boeiend"
+        }
+      },
+      {
+        "label": {
+          "en": "The guide lacked knowledge or communication skills.",
+          "fr": "Le guide manquait de connaissances ou de compétences en communication",
+          "nl": "De gids had onvoldoende kennis of communicatieve vaardigheden"
+        }
+      },
+      {
+        "label": {
+          "en": "Acoustics made it hard to hear the guide clearly.",
+          "fr": "L'acoustique rendait difficile d'entendre clairement le guide.",
+          "nl": "Door de akoestiek was het moeilijk om de gids goed te verstaan."
+        }
+      },
+      {
+        "label": {
+          "en": "Demos or presentations weren’t clearly visible",
+          "fr": "Les démonstrations ou présentations n’étaient pas clairement visibles",
+          "nl": "Demo's of presentaties waren niet duidelijk zichtbaar"
+        }
+      },
+      {
+        "label": {
+          "en": "Other concerns not listed above ",
+          "fr": "Autres préoccupations non mentionnées ci-dessus",
+          "nl": "Andere zorgen die hierboven niet zijn genoemd"
+        }
+      }
+    ]
+  },
+  "feedback_positive": {
+    "title": {
+      "en": "We're glad you had a great experience! .What did you appreciate?  ",
+      "fr": "Nous sommes heureux que vous ayez eu une belle expérience ! Qu'avez-vous apprécié ?",
+      "nl": "We zijn blij dat je een geweldige ervaring hebt gehad! Wat heb je gewaardeerd?"
+    },
+    "questions": [
+      {
+        "label": {
+          "en": "Demos worked without issues",
+          "fr": "Les démos ont fonctionné sans problème",
+          "nl": "Demo's werkten zonder problemen"
+        }
+      },
+      {
+        "label": {
+          "en": "Demos were clear and easy to understand.",
+          "fr": "Les démos étaient claires et faciles à comprendre",
+          "nl": "Demo's waren duidelijk en gemakkelijk te begrijpen"
+        }
+      },
+      {
+        "label": {
+          "en": "Demos were interesting and engaging.",
+          "fr": "Les démonstrations étaient intéressantes et engageantes",
+          "nl": "De demo's waren interessant en boeiend"
+        }
+      },
+      {
+        "label": {
+          "en": "Demos were user-friendly",
+          "fr": "Les démos étaient conviviales",
+          "nl": "Demo's waren gebruiksvriendelijk."
+        }
+      },
+      {
+        "label": {
+          "en": "Topics were relevant and informative.",
+          "fr": "Les sujets étaient pertinents et informatifs",
+          "nl": "Onderwerpen waren relevant en informatief"
+        }
+      },
+      {
+        "label": {
+          "en": "Guide was knowledgeable and communicated well.",
+          "fr": "Le guide était compétent et communiquait bien",
+          "nl": "Gids was deskundig en communiceerde goed"
+        }
+      },
+      {
+        "label": {
+          "en": "Demos were well-designed.",
+          "fr": "Les démos étaient bien conçues.",
+          "nl": "Demo's waren goed ontworpen."
+        }
+      },
+      {
+        "label": {
+          "en": "Other highlights not listed above ",
+          "fr": "Andere hoogtepunten die hierboven niet zijn vermeld",
+          "nl": "Autres points forts non mentionnés ci-dessus."
+        }
+      }
+    ]
+  }
+}
