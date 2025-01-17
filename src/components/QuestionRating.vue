@@ -36,9 +36,9 @@
 import { defineProps, defineEmits, ref } from 'vue'
 
 import one from '@/assets/animations/1check.json'
-import two from '@/assets/animations/2like.json'
-import three from '@/assets/animations/3like.json'
-import four from '@/assets/animations/4love.json'
+import two from '@/assets/animations/2Like.json'
+import three from '@/assets/animations/3Like.json'
+import four from '@/assets/animations/4Love.json'
 import AnimationContainer from '@/components/AnimationContainer.vue'
 
 const props = defineProps<{
