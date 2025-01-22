@@ -5,17 +5,14 @@ import cors from '@fastify/cors'
 const fastify = Fastify({ logger: true })
 
 await fastify.register(cors, {
-  origin: 'http://localhost:5173', // Allow requests only from this origin
-  methods: ['POST'], // Specify allowed HTTP methods
+  origin: 'http://localhost:5173',
+  methods: ['POST'],
 })
 
-// Route to handle survey submission
 fastify.post('/submit-survey', async (request, reply) => {
-  console.log('Current Working Directory:', process.cwd())
   const { survey_name, rating, feedback } = request.body
   const feedbackString = feedback.join('; ')
 
-  // Command to execute the bash script
   const command = `bash ./src/scripts/update_csv.sh "${survey_name}" "${rating}" "${feedbackString}"`
   const push = `git add . && git commit -m 'update survey' && git push`
 
