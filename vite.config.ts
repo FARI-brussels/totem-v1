@@ -10,6 +10,11 @@ export default defineConfig({
     vue(),
     // vueDevTools(),
   ],
+  build: {
+    rollupOptions: {
+      external: ['child_process'], // Exclude Node.js modules
+    },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

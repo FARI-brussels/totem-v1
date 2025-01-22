@@ -36,19 +36,36 @@ export const MENU_OPTIONS = {
 
 export const useSurveyStore = defineStore('survey', () => {
   const activeSurvey = ref<Survey>('demo_tour')
-  const selectSurvey = (survey: Survey) => (activeSurvey.value = survey)
-
   const surveyData = ref()
+
+  const selectSurvey = (survey: Survey) => (activeSurvey.value = survey)
 
   function getSurvey(_survey: Survey) {
     //implement
     surveyData.value = mockSurvey
   }
 
-  function sendSurveyFeedback(formData: SurveyForm) {
-    // implement
-
+  async function sendSurveyFeedback(formData) {
     console.dir(formData)
+
+    try {
+      const response = await fetch('http://localhost:3000/submit-survey', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error(`Failed to submit survey: ${response.statusText}`)
+      }
+
+      const data = await response.json()
+      console.log('Server response:', data)
+    } catch (error) {
+      console.error('Error submitting survey feedback:', error)
+    }
   }
 
   return { activeSurvey, selectSurvey, getSurvey, sendSurveyFeedback, surveyData, MENU_OPTIONS }
